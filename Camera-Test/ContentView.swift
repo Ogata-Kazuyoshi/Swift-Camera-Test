@@ -32,6 +32,6 @@ struct ContentView: View {
     }
 }
 
-#Preview {
+#Preview(traits: PreviewTrait.landscapeLeft) {
     ContentView()
 }

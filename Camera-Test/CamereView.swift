@@ -26,7 +26,7 @@ struct CameraView: UIViewControllerRepresentable {
             // ここで撮影した画像を取得できます
             if let image = info[.originalImage] as? UIImage {
                 // 画像を使用する処理を書く
-                let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 100, height: 100))
+                let resizedImage = resizeImage(image: image, targetSize: CGSize(width: 200, height: 200))
                             // 画像をBase64にエンコード
                             if let imageData = resizedImage.jpegData(compressionQuality: 1.0) {
                                 let base64String = imageData.base64EncodedString()
